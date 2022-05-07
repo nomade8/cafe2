@@ -10,37 +10,43 @@
            margin: 0; 
            padding: 0;
            background-color: white;
+           overflow: hidden;
         }
-#base{
-    height: 150px;
-    background-color: rgb(246, 231, 224);
-   
+
     
     
-    
-}
+
 #logo{
     height:25%;
     width: 25%;
-    background-color: transparent;
+    background-color: rgb(248, 247, 246);
     position: absolute;
-    margin-left: 40%;
+    margin-left: 37%;
+    box-shadow: 3px 4px 25px black;
+    border-radius: 15px;
+    opacity: 0.7;
+    margin-top: 10px;
     
 }
 #foto{
     height: 100%;
     width: 100%;
+    box-shadow: 3px 4px 15px black;
+    display: flex;
+    
 }
 .insta{
 
     position: absolute;
-    margin-top: 80px;
+    margin-top: 50px;
     margin-left: 50px;
     background-color: transparent;
     width: 100%;
     display: flex;
     float: left;
     font-size:1.4vw;
+    color: rgb(251, 249, 249);
+    font-family: Arial, Helvetica, sans-serif;
 
 }
     </style>
@@ -51,6 +57,13 @@
 <div id="base">
 <img src="cafe grazadeus logo.png" alt="Café Grazadeus" id="logo">
 <p><a href="https://www.instagram.com/cafegrazadeus" class="insta">Instagram - Café Grazadeus </a></p>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script>
+             $(function() {
+    $("#logo").draggable();
+});
+        </script>
 
 </div>
 <div id="principal">
