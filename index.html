@@ -1,75 +1,98 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grazadeus</title>
-    <style>
-        *{
-           margin: 0; 
-           padding: 0;
-           background-color: white;
-           overflow: hidden;
-        }
-
     
-    
-
-#logo{
-    height:25%;
-    width: 25%;
-    background-color: rgb(248, 247, 246);
-    position: absolute;
-    margin-left: 37%;
-    box-shadow: 3px 4px 25px black;
-    border-radius: 15px;
-    opacity: 0.7;
-    margin-top: 10px;
-    
-}
-#foto{
-    height: 100%;
-    width: 100%;
-    box-shadow: 3px 4px 15px black;
-    display: flex;
-    
-}
-.insta{
-
-    position: absolute;
-    margin-top: 50px;
-    margin-left: 50px;
-    background-color: transparent;
-    width: 100%;
-    display: flex;
-    float: left;
-    font-size:1.4vw;
-    color: rgb(251, 249, 249);
-    font-family: Arial, Helvetica, sans-serif;
-
-}
-    </style>
+    <title>Document</title>
 </head>
+<style>
+    body{
+        margin: 0;
+        padding:0;
+        box-sizing: border-box;
+        background-color: rgb(247, 242, 242);
+        
+        
 
-<body>
-
-<div id="base">
-<img src="cafe grazadeus logo.png" alt="Café Grazadeus" id="logo">
-<p><a href="https://www.instagram.com/cafegrazadeus" class="insta">Instagram - Café Grazadeus </a></p>
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-        <script>
-             $(function() {
-    $("#logo").draggable();
-});
-        </script>
-
-</div>
-<div id="principal">
-<img src="cafe2.jpeg" alt="Café Grazadeus" id="foto">
-
-</div>
+    }
+    #container{
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows:1fr 1fr 1fr;
+        grid-gap: 8px;
+        grid-template-areas: "m m" "a f" ". g";
+        object-fit: cover;
+    }
+    #cafe{
+       background-color: rgb(251, 253, 253);
+       
+       grid-area: m;
+       
     
+       
+      
+       
+       
+       
+    }
+
+    #texto{
+       background-color: rgb(6, 109, 28);
+       grid-area: a;
+       padding: 20px;
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       font-size: 27px;
+       box-shadow: 4px 4px 14px black;
+       padding-top: 30px;
+       color: white;
+       
+       
+       
+    }
+
+    #fruto{
+       
+       grid-area: f;
+       width: 100%;
+       
+       
+        
+    }
+    #insta{
+        
+        width: 20%;
+        grid-area: g;
+        margin-top: -130px;
+        margin-left: 150px;
+        transform: scale(.2);
+    }
+    #logo{
+        position: absolute;
+        width: 15%;
+        opacity: .7;
+        margin-left: 550px;
+        border-radius: 30px;
+        margin-top: 50px;
+    }
+       
+</style>
+
+<body id="corpo">
+    <img src="141997631_483398676153192_7199397159864956604_n.jpg" id="logo"  alt="">
+
+    <div id="container">
+        <div id="cafe"><img src="_DSC8388.png" alt=""></div> 
+        <div id="texto">O Café Especial Grazadeus é produzido a mais de 1100 metros de altitude, nas montanhas de Araponga-MG.<p>Grãos maduros e selecionados.</p> </div>
+        <div id="fruto"><img src="_DSC8505.png" alt=""></div>
+        <div id="insta"><img src="instagram_socialnetwork_20033.png" alt=""></div>       
+    </div>   
+   
+    <script>
+     
+     </script>
 </body>
 </html>
