@@ -4,96 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>Document</title>
 </head>
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-    body{
-        margin: 0;
-        padding:0;
-        box-sizing: border-box;
-        background-color: rgb(247, 242, 242);
-        
-        
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Quicksand&display=swap');
+body{
+    margin:0;
+    padding: 20px;
+    background-color: rgb(254, 253, 253);
+}
+.container{
+    width: 100vw;
+    width:100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:auto;
+    grid-gap:20px;
+    align-items: center;
+  
+    }
 
-    }
-    #container{
-        width: 100vw;
-        height: 100vh;
-        display: grid;
-        grid-template-columns: 1fr 1fr ;
-        grid-template-rows:1fr 1fr 1fr;
-        grid-gap: 8px;
-        grid-template-areas: "m m" "a f" ". g";
-        
-    }
-    #cafe{
-       background-color: rgb(251, 253, 253);
-       
-       grid-area: m;
-       
+img{
+width:100%;
+height: 100%;
+border-radius: 15px;
+border:1px solid rgb(3, 68, 21)
+}
+p{
     
-       
-      
-       
-       
-       
-    }
+border: 1px solid rgb(3, 70, 23);
+height: 270px;
+text-indent: 20px;
+padding-inline: 40px;
+padding-top: 10px;
+font-family: 'Montserrat', sans-serif;
+font-size: 23px;
+color: rgb(0, 5, 2);
+background-color: rgb(252, 234, 225);
 
-    #texto{
-       background-color: rgb(6, 109, 28);
-       grid-area: a;
-       padding: 20px;
-       font-family: 'Quicksand', sans-serif;
-       font-size: 27px;
-       box-shadow: 4px 4px 14px black;
-       padding-top: 30px;
-       color: white;
-       
-       
-       
-    }
 
-    #fruto{
-       
-       grid-area: f;
-       width: 100%;
-       
-       
-        
-    }
-    #insta{
-        
-        width: 20%;
-        grid-area: g;
-        margin-top: -130px;
-        margin-left: 150px;
-        transform: scale(.2);
-    }
-    #logo{
-        position: absolute;
-        width: 15%;
-        opacity: .7;
-        margin-left: 550px;
-        border-radius: 30px;
-        margin-top: 50px;
-    }
-       
-</style>
 
-<body id="corpo">
-    <img src="141997631_483398676153192_7199397159864956604_n.jpg" id="logo"  alt="">
+}
+p{
+    border-radius: 15px;
+    text-align: justify;
+    box-shadow: 4px 4px 15px rgb(55, 13, 1);
+    
+    display: table-cell;
+    vertical-align: middle 
 
-    <div id="container">
-        <div id="cafe"><img src="fotocafe2.png" alt=""></div> 
-        <div id="texto">O Café Especial Grazadeus é produzido a mais de 1100 metros de altitude, nas montanhas de Araponga-MG.<p>Grãos maduros e selecionados.</p> </div>
-        <div id="fruto"><img src="fotocafe.png" alt=""></div>
-        <div id="insta"><a href="http://instagram.com/cafegrazadeus"><img src="instagram_socialnetwork_20033.png" alt=""></a></div>       
-    </div>   
+}
+#logo{
+    position: relative;
+    width: 20%;
+    height: 20%;
+    margin-left: 490px;
+    margin-top: -490px;
+    background-color: rgba(248, 248, 245, 0.8);
+    border-radius: 15px;
+    box-shadow: 6px 6px 17px rgb(54, 10, 1);
+    padding: 10px;
+
    
-    <script>
-     
-     </script>
+
+}
+
+
+</style>
+<body>
+    <div class="container">
+        <div><img src="cafe2.jpeg" alt=""></div>
+        <div><p>Os grãos do café especial Grazadeus são produzidos nas montanhas da Serra do Brigadeiro em Araponga, MG, por famílias tradicionais no cultivo de café. As plantações estão localizadas a mais de 1100 metros de altitude. </p></div>
+        
+        <div><p>Nossa intenção é levar, à sua mesa, um café de qualidade. Nossa produção é artesanal e limitada. </p></div>
+         <div><img src="fotocafe.png" alt=""></div>
+    </div>
+    <div id="logo"><a href="http://instagram.com/cafegrazadeus"><img src="cafe grazadeus logo.png"  alt=""></a></div>
+
 </body>
 </html>
