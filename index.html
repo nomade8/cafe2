@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+!DOCTYPE html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,79 +7,75 @@
     <title>Document</title>
 </head>
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Quicksand&display=swap');
-body{
-    margin:0;
-    padding: 20px;
-    background-color: rgb(254, 253, 253);
-}
-.container{
-    width: 100vw;
-    width:100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows:auto;
-    grid-gap:20px;
-    align-items: center;
-  
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+    body{
+        
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
+    #cab{
+        display:inline-block;
+        width: 100%;
+        height: 300px;
+        background-color: rgb(100, 3, 3);
+        background-image: url("pedecafe.png");
+        background-size:cover;
+        text-align: center;
+        justify-content: center;
+        color: rgb(232, 227, 227);
+        box-shadow: 0 4px 34px rgb(104, 2, 2);
+        font-family: 'Inter', sans-serif;
+        letter-spacing: 0.3em;
+    }
+    h3{
+        font-size: 50px;
+    }
+    section{
+        display: block;
+        position: relative;
+        padding: 30px;
+        font-size: 20px;
+        font-family: 'Inter', sans-serif;
+        text-indent: 40px;
+        
+    }
+    p{
+        text-shadow: 1px 1px 2px rgb(71, 70, 70);
+        padding: 10px;
+        text-justify: distribute;
+        text-align: justify;
+        
+    }
+    #foto{
+        width: 10em;
+        height: 7em;
+        
+        
 
-img{
-width:100%;
-height: 100%;
-border-radius: 15px;
-border:1px solid rgb(3, 68, 21)
-}
-p{
-    
-border: 1px solid rgb(3, 70, 23);
-height: 270px;
-text-indent: 20px;
-padding-inline: 40px;
-padding-top: 10px;
-font-family: 'Montserrat', sans-serif;
-font-size: 23px;
-color: rgb(0, 5, 2);
-background-color: rgb(252, 234, 225);
+    }
+    .divlogo{
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
 
-
-
-}
-p{
-    border-radius: 15px;
-    text-align: justify;
-    box-shadow: 4px 4px 15px rgb(55, 13, 1);
-    
-    display: table-cell;
-    vertical-align: middle 
-
-}
-#logo{
-    position: relative;
-    width: 20%;
-    height: 20%;
-    margin-left: 490px;
-    margin-top: -490px;
-    background-color: rgba(248, 248, 245, 0.8);
-    border-radius: 15px;
-    box-shadow: 6px 6px 17px rgb(54, 10, 1);
-    padding: 10px;
-
-   
-
-}
-
+    }
 
 </style>
 <body>
-    <div class="container">
-        <div><img src="cafe2.jpeg" alt=""></div>
-        <div><p>Os grãos do café especial Grazadeus são produzidos nas montanhas da Serra do Brigadeiro em Araponga, MG, por famílias tradicionais no cultivo de café. As plantações estão localizadas a mais de 1100 metros de altitude. </p></div>
-        
-        <div><p>Nossa intenção é levar, à sua mesa, um café de qualidade. Nossa produção é artesanal e limitada. </p></div>
-         <div><img src="fotocafe.png" alt=""></div>
-    </div>
-    <div id="logo"><a href="http://instagram.com/cafegrazadeus"><img src="cafe grazadeus logo.png"  alt=""></a></div>
-
+   
+    <header id="cab">
+        <h3>Café Grazadeus</h3>
+        <h4>Especial</h4>
+    </header>
+    <main>
+        <section>
+            <hr>
+            <p>O Café Especial Grazadeus é produzido a mais de 1100 metros de altitude nas montanhas de Araponga-MG. Seu cultivo é feito por famílias com vasta experiência no assunto. Nossa intenção é levar, à sua mesa, um café de qualidade.</p>
+        <hr>
+        <div class="divlogo"><a href="https://instagram.com/cafegrazadeus"><img id="foto" src="cafe grazadeus logo.png" alt=""></a></div>
+        </section>
+    </main>
 </body>
 </html>
